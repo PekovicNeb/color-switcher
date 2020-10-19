@@ -6,8 +6,8 @@ function App() {
   const [color, setColor] = useState('')
   console.log(color, setColor)
   return (
-    <div className={'react-root ' + color }>
-      <div className ='centered'>
+    <div className='react-root'>
+      <div className ={'centered ' + color }>
         <h1>Coler Picker</h1>
         <ColorChangeButton color="red" setColor={setColor}/>
         <ColorChangeButton color="blue" setColor={setColor} />
